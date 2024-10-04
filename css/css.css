@@ -1,0 +1,20 @@
+.impar{
+    background-color: lightcoral;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.resultado {
+    margin-top: 50px;
+    font-size: 24px;
+    color: darkred;
+}
+.par{
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.resultadoPar {
+    margin-top: 50px;
+    font-size: 24px;
+    color: darkred;
+}
