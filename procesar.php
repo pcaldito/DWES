@@ -1,5 +1,5 @@
 <?php
-// Función para determinar si un número es par y calcular su cuadrado
+// Función para determinar si un número es par y calcular su cuadrado, devuelve si es par y además el cuadrado del numero sea impar o par
 function es_par_y_cuadrado($numero) {
     $resultado = [
         'es_par' => $numero % 2 === 0,
