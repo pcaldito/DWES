@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(230, 219, 205);
+    margin:0 auto;
+}
+nav {
+    background-color: antiquewhite;
+    width:80vw;
+    height:10vh;
+    margin:0 auto;
+    padding-top:20px;
+    padding-left:10%;
+    border-radius:30px;
+}
+nav button{
+    width:20%;
+    height:50%;
+    
+}
+#oculto{
+    background-color: antiquewhite;
+    border:0;
+}
+#logo{
+    height:60px;
+    width:60px;
+    background-image: url("/img/mundo.png");
+}
+main{
+    float:left;
+    width:90vw;
+    height: 85vh;
+    margin-top:10px;
+    margin-left:70px;
+    background-color: antiquewhite;
+    border-radius:30px;
+}
+#index{
+    float:left;
+    width:60vw;
+    height: 82vh;
+    margin-top:10px;
+    margin-left:70px;
+    background-color: antiquewhite;
+    border-radius:30px;
+}
+main h3{
+    padding-left: 20px;
+}
+main section{
+    font-weight:bolder;
+    font-size:25px;
+    padding-top:10px;
+    padding-left:20px;
+}
+main article{
+    font-size:16px;
+    padding-left:20px;
+    text-align:justify;
+    padding-right:20px;
+}
+aside{
+    float:right;
+    width:28vw;
+    height:82vh;
+    margin-top:10px;
+    margin-right:65px;
+    background-color: antiquewhite;
+    border-radius:30px;
+}
+aside img{
+    height:30%;
+    padding-top: 50px;
+    padding-left:30px;
+}
+aside figcaption{
+    text-align: center;
+}
+#desastres{
+    font-weight:bolder;
+}
+#lista{
+    width:80%;
+    height:35%;
+    margin:0 auto;
+    font-size: large;
+}
+main table{
+    width:80%;
+    margin:0 auto;
+    border:2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+main table th{
+    border:2px solid black;
+    padding:10px;
+}
+main table th:nth-of-type(odd){
+    background-color:black;
+    color:white;
+}
+main table th:nth-of-type(even){
+    background-color: white;
+    color:black;
+}
+main table td{
+    border:2px solid black;
+    padding:10px;
+}
+form{
+    width:90vw;
+    height:35%;
+    margin:0 auto;
+    text-align:center;
+    font-size:larger;
+    padding:25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
