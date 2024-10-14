@@ -81,7 +81,7 @@ if (isset($_GET['numero1'], $_GET['numero2'], $_GET['operador'])) {
 
     <?php if ($resultado !== null): ?>
         <h2>Resultado:</h2>
-        <p><?php echo "El resultado de $mayor $operador $menor es: " . $resultado; ?></p>
+        <p><?php echo "El resultado de ".$mayor $operador $menor." es: " . $resultado; ?></p>
     <?php endif; ?>
 </body>
 </html>
