@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta de Alumno</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div id="alta">
+        <h1>Alta de Alumno</h1>
+        <form action="procesaralta.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" required min="0"><br><br>
+
+            <label for="curso">Curso: </label>
+            <input type="text" name="curso" required><br><br>
+
+            <input type="submit" value="Registrar Alumno">
+        </form>
+    </div>
+    <div id="borrar">
+        <h1>Borrar Alumno</h1>
+        <form action="borrar.php" method="post">
+            <label for="num">Numero: </label>
+            <input type="text" name="num" required><br><br>
+
+            <input type="submit" value="Borrar Alumno">
+        </form>
+    </div>
+    <div id="modif">
+        <h1>Modificar Alumno</h1>
+        <form action="modificar.php" method="post"></form>
+            <label for="num">Numero: </label>
+            <select name="num" required></select><br><br>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" required min="0"><br><br>
+
+            <label for="curso">Curso: </label>
+            <input type="text" name="curso" required><br><br>
+
+            <input type="submit" value="Modificar Alumno">
+        </form>
+    </div>
+    
+</body>
+</html>

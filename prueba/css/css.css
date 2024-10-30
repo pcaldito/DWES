@@ -1,0 +1,25 @@
+#alta{
+    float: left;
+    margin-left: 50px;
+    background-color: antiquewhite;
+    width:320px;
+    height: 350px;
+    padding-left: 20px;
+}
+#borrar{
+    margin-left:150px;
+    float: left;
+    background-color: antiquewhite;
+    width:320px;
+    height: 350px;
+    padding-left: 20px;
+}
+
+#modif{
+    float:left;
+    margin-left:150px;
+    background-color: antiquewhite;
+    width:320px;
+    height: 350px;
+    padding-left: 20px;
+}
