@@ -22,23 +22,15 @@ class Base {
         $user = $_POST['username'];
         $pass = $_POST['password'];
         
-        $sql = "SELECT * FROM usuarios WHERE username = ? AND password = ?";
-        $stmt = $this->conexion->prepare($sql);
-
-        if ($stmt === false) {
-            die("Error en la consulta: " . $this->conexion->error);
-        }
-
-        $stmt->bind_param("ss", $user, $pass);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
+        $sql = "SELECT * FROM usuarios WHERE username = '$user' AND password = '$pass'"; 
+        $result = $this->conexion->query($sql);
+        
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            if ($row['role'] === 'admin') {
+            if ($row['role'] === 'admin' && $user && $pass) { 
                 echo "Has accedido como administrador.<br>";
                 echo "Bienvenido.";
-            } else {
+            } elseif ($user && $pass) {
                 echo "Has accedido como usuario.<br>";
                 echo "Bienvenido.";
             }
@@ -47,3 +39,4 @@ class Base {
         }
     }
 }
+?>
